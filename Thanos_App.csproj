@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>thanos.ico</ApplicationIcon>
+    <UseWindowsForms>False</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background.jfif" />
+    <None Remove="bcORw8j.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="thanos.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WindowsAPICodePack-Shell" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="background.jfif" />
+    <Resource Include="bcORw8j.jpg" />
+  </ItemGroup>
+
+</Project>
